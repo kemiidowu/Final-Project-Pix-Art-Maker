@@ -28,7 +28,7 @@ $('#sizePicker').submit(function(event){
 // Your code goes here!
 function makeGrid(height,width) {
 
-    //$('tr').remove() // remove tr element and its child
+    $('tr').remove() // remove tr element and its child
 
     for(let i=1; i<=height; i++){
          $('#pixelCanvas').append('<tr></tr>'); //add tr 
