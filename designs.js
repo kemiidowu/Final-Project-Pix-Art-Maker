@@ -2,10 +2,10 @@
 
 function colorFill(){
 
-      let columnRow= $('td');
+      let columnRow = $('td');
       columnRow.click(function(){
       let color = $('#colorPicker').val();
-      if ($(this).attr('style')) {
+      if ($(this).attr('style')) {          // on click if style is true remove style else add style
 
           $(this).removeAttr('style');
 
@@ -27,19 +27,14 @@ $('#sizePicker').submit(function(event){
 });
 // Your code goes here!
 function makeGrid(height,width) {
-
-    $('tr').remove() // remove tr element and its child
-
-    for(let i=1; i<=height; i++){
-         $('#pixelCanvas').append('<tr></tr>'); //add tr 
+      
+         $('tr').remove(); // remove tr element and its child
+        for(let i=1; i<=height; i++){
+            $('#pixelCanvas').append('<tr></tr>'); //add tr to the table
     
         for(let j=1; j<=width; j++){
             $('tr').filter(':last').append('<td></td>');   // add td to the last td
         }
     } 
-}
-
-
-
-
+ }
 
