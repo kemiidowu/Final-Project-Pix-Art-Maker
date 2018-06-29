@@ -9,10 +9,10 @@
 
 $('body').css('background-color', '#cac9cc');
 
-/**
-* @description Select color input on click
-* @val accepts the color selected
-* @attr adds attribute value
+/*
+Select color input on click
+accepts the color selected
+attr adds attribute value
 */
 
 function colorFill(){
@@ -33,10 +33,10 @@ function colorFill(){
     });
 }
 
-/**
-* @description When size is submitted by the user, call makeGrid() and colorFill()
-* @val {number} inputHeight - accepts the user's value for height as argument for makeGrid()
-* @val {number} inputWeight - accepts the user's value for width as argument for makeGrid()
+/*
+When size is submitted by the user, call makeGrid() and colorFill()
+inputHeight - accepts the user's value for height as argument for makeGrid()
+inputWeight - accepts the user's value for width as argument for makeGrid()
 */
 
 $('.sizePicker').submit(function(event) {
@@ -49,13 +49,13 @@ $('.sizePicker').submit(function(event) {
 
 });
 
-/**
-* @description make n by m grid
-* @param {number} n - The number of rows
-* @param {number} m - The  number of columns
-* @remove removes tr and its child
-* @loop loops the height and width and append the column to the last row
-* @css removes the body background color and adds white background to the table
+/*
+make n by m grid
+{number} n - The number of rows
+{number} m - The  number of columns
+remove removes tr and its child
+the for loop loops the height and width and append the column to the last row
+css style removes the body background color and adds white background to the table
 */
 
 function makeGrid(n, m) {
