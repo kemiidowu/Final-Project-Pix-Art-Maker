@@ -44,9 +44,17 @@ $('.sizePicker').submit(function(event) {
     event.preventDefault();
     let row = $(".inputHeight").val();
     let column = $('.inputWeight').val();
-    makeGrid(row, column);
-    colorFill();
-
+    
+    if (row && column) {
+        
+        makeGrid(row, column);
+        colorFill();
+        
+    } else {
+        
+        alert('Please give your grid height and column');
+        
+    }
 });
 
 /*
