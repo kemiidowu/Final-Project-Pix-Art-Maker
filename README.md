@@ -1,5 +1,5 @@
 # Pixel Art Maker Project
-https://kemiidowu.github.io/Final-Project-Pix-Art-Maker/
+https://kemiidowu.github.io/Pixel-Art-Maker/
 
 ## Table of Contents
 
