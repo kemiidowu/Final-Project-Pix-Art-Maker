@@ -35,8 +35,8 @@ function colorFill(){
 
 /*
 When size is submitted by the user, call makeGrid() and colorFill()
-inputHeight - accepts the user's value for height as argument for makeGrid()
-inputWeight - accepts the user's value for width as argument for makeGrid()
+inputHeight - accepts the user's value for height which is not less than one as argument for makeGrid()
+inputWeight - accepts the user's value for width which is not less than one as argument for makeGrid()
 */
 
 $('.sizePicker').submit(function(event) {
