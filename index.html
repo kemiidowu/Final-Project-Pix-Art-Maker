@@ -3,6 +3,7 @@
 <head>
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <!-- linking the style sheet --> 
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -10,6 +11,9 @@
     <h1>Lab: Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
+    
+    <!-- the form allows user to input the height and width of their grid and submit -->
+    
     <form class="sizePicker">
         Grid Height:
         <input type="number" class="inputHeight" name="height" min="1" value="1" placeholder="rows">
@@ -17,12 +21,18 @@
         <input type="number" class="inputWeight" name="width" min="1" value="1" placeholder="columns">
         <input type="submit" class="button">
     </form>
-
+    
+    <!-- the form allows user to select the color they want to design the canvas -->
+    
     <h2>Pick A Color</h2>
     <input type="color" class="colorPicker">
 
+    <!--table for the grid -->
     <h2>Design Canvas</h2>
     <table class="pixelCanvas"></table>
+    
+    <! linking the javascript page and jquery -->
+    
     <script src="jquery-3.3.1.min.js"></script>
     <script src="designs.js"></script>
 
